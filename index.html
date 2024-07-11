@@ -6,21 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img class="Logo" src="Alura%20Challenge%20-%20Desafío%201%20-%20Lógica/Vector.png" alt="a">
-
-<div class="Encryptor">
-
-    <input class="input-text" type="text" placeholder="Ingrese el texto aqui">
-    <div class="Disclaimer">
-        <img src="Alura%20Challenge%20-%20Desafío%201%20-%20Lógica/Group.png" alt="!">
-        <span>Solo letras minúsculas y sin acentos</span>
+    <img class="logo" src="Alura%20Challenge%20-%20Desafío%201%20-%20Lógica/Vector.png" alt="a">
+    <div class="container">
+        <div class="encryptor">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="terms">
+            <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="buttons">
+            <button class="btn-encryp" type="button" onclick="encryp()">Encriptar</button>
+            <button class="btn-decrypt" type="button" onclick="decrypt()">Desencriptar</button>
+        </div>
+        </div>
+        <div class="encrypted">
+            <img src="" alt="" id="doll">
+            <div class="message-encrypted" id="message-encrypted">
+                <h2 id="no-message">Ningún mensaje fue encontrado</h2>
+                <p id="paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <textarea name="message" id="message" cols="30" rows="10" class="message"></textarea>
+            </div>
+        </div>
     </div>
-    <div class="Button">
-    <button class="Encrypt" type="submit">Encriptar!</button>
-    <button class="Decrypt" type="submit">Desencriptar!</button>
-    </div>
-
-</div>
-
 </body>
+<script src="apps.js"></script>
 </html>
