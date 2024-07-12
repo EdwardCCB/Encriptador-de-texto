@@ -75,7 +75,7 @@
     top: 82%;
 }
 
-.btn-encryp {
+.btn-encrypt {
     align-items: center;
     justify-content: center;
     padding: 2%;
@@ -107,7 +107,7 @@
     color: #0A3871;
 }
 
-.btn-encryp:hover,
+.btn-encrypt:hover,
 .btn-decrypt:hover{
     cursor: pointer;
     opacity: 0.4;
@@ -200,14 +200,14 @@
         left: 5%;
         top: 74%;
     }
-    .btn-encryp,
+    .btn-encrypt,
     .btn-decrypt {
         width: 48%;
         border-radius: 16px;
         font-size: 16px;
     }
 
-    .btn-encryp:hover,
+    .btn-encrypt:hover,
     .btn-decrypt:hover {
         margin: 0.3%;
         width: 47%;
