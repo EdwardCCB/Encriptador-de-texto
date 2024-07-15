@@ -193,7 +193,11 @@
     position: absolute;
     top: 5%;
     width: 75%;
-    height: 90%;
+    height: 75%;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
     resize: none;
     border: none;
     outline: none;
@@ -212,7 +216,7 @@
 /*----- Responsive design -----*/
 
 /*----- Table Design -----*/
-@media (max-width: 57.5em) {
+@media (max-width: 78.125em) {
     .container {
         display: flex;
         flex-direction: row;
@@ -231,7 +235,7 @@
 
     .terms {
         width: 80%;
-        left: 5%;
+        left: 12.5%;
         top: 72%;
     }
 
@@ -242,9 +246,15 @@
     }
     .btn-encrypt,
     .btn-decrypt {
+        position: relative;
+        left: 9%;
         width: 48%;
         border-radius: 16px;
         font-size: 16px;
+    }
+
+    .btn-decrypt{
+        margin: 0 5%;
     }
 
     .btn-copy{
@@ -273,6 +283,10 @@
         padding: 1.8%;
     }
 
+    .btn-decrypt:hover{
+        margin: 0 5%;
+    }
+
     .encrypted {
         width: 80%;
         height: 15%;
@@ -294,6 +308,14 @@
 
     .encrypted img  {
         display: none;
-        visibility: hidden;
     }
+}
+
+/*----- Mobile Design -----*/
+@media (max-width: 37.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
